@@ -22,21 +22,19 @@ Data files for analysis using colorimetric, photothermal and dual-mode sensing
 - Based on trained model data, makes predictions with new input features
 - Applies Box-Cox transformation based on pre-trained data
 
-## Folders
-
-#### 1. 'color_data'
+### 4. 'color_data.xlsx'
 - Includes processed ratio for three color channels: gray, green, and blue for each Salmonella concentration used in regression analysis
 - Columns:
   - gray, green, blue: intensity values extracted from line intensity analysis 
   - target: log-scale concentrations 
 
-#### 2. 'pt_data'
+### 5. 'pt_data.xlsx'
 - Includes features used to train photothermal dataset 
 - Columns:
   - peak, std, kurt, skew, ssim, mse: features extracted for training 
   - target: log-scale concentrations
 
-#### 3. 'data'
+### 6. 'data.xlsx'
 - Included merged features from color and photothermal dataset
 - Columns:
   - gray, green, blue, peak, std, kurt, skew, ssim, mse
